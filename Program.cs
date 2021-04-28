@@ -9,7 +9,7 @@ namespace DamageCounter
         {
 
          Console.WriteLine("Enter unit Max # of shots");
-         var numbshotin = Convert.ToInt32(Console.ReadLine());
+         var numbshotin = Convert.ToString(Console.ReadLine());
             //Console.WriteLine(numbshotin);
 
          Console.WriteLine("Enter BS/WS of attaking unit");
@@ -36,14 +36,13 @@ namespace DamageCounter
          Console.WriteLine("Enter target units wounds");
          int Targwnd = Convert.ToInt32(Console.ReadLine());
 
-            bestsave bestsave = new bestsave();
+           // bestsave bestsave = new bestsave();
 
-            int bestAP = bestsave.save(targNsave, targinvul, wepAp);
+            int bestAP = calculations.save(targNsave, targinvul, wepAp);
 
             //Console.WriteLine(bestAPtest);
 
-            var numshotdevide = numbshotin / 2;
-            var numbshot = (int)numshotdevide;
+            numbshotin.Calculations.numbcheck
 
             //   Console.WriteLine(numbshot);
 
